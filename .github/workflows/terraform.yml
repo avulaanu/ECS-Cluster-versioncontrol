@@ -72,6 +72,9 @@ jobs:
       with:
         cli_config_credentials_hostname: 'anuavula9405@gmail.com'
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+        
+    - name: Terraform Login  
+      run: terraform login
  
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
