@@ -1,4 +1,12 @@
+
 terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+
   cloud {
     organization = "Tf_cloud"
 
@@ -6,4 +14,8 @@ terraform {
       name = "ECS_WS"
     }
   }
+
+ provider "aws" {
+  region = "ap-south-1"
+}
 }
