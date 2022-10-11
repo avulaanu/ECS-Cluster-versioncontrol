@@ -11,9 +11,6 @@ terraform {
  provider "aws" {
   region = "ap-south-1"
 }
-  backend "local" {
-    path = "relative/path/to/terraform.tfstate"
-  }
 }
 
 
