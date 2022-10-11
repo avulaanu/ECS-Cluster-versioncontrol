@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 1.3.2"
+  required_version = "~> 1.2.8"
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "anasuya"
