@@ -3,6 +3,6 @@ terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
     organization = "anasuya"
-    workspaces = "Anasuya"
+    workspaces = { prefix = "vpc-ws-u7W8sjwsACHbeAxk" }
   }
 }
